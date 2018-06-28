@@ -33,6 +33,7 @@ public class Code_05_MergeSort {
 		while (p1 <= m && p2 <= r) {//p1,p2两个指针，p1从l位置开始到m,p2从m+1位置到r。
 			help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];//p1和p2指向的谁更小就存入help数组。
 		}
+		//两个必有且只有一个越界
 		while (p1 <= m) {
 			help[i++] = arr[p1++];
 		}
